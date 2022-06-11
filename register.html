@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <header>
+      <h1>Register</h1>
+    </header>
+    <hr />
+
+    <main>
+      <form action="">
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                minlength="3"
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                minlength="3"
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone</label></td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="123-45-678"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                minlength="3"
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="state">State/Province</label></td>
+            <td>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                minlength="3"
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter"
+                minlength="8"
+                maxlength="20"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                id="confirmpassword"
+                name="confirmpassword"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter"
+                minlength="8"
+                maxlength="15"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Register" /></td>
+          </tr>
+        </table>
+      </form>
+    </main>
+
+    <footer>Designed by Uche Victory</footer>
+  </body>
+</html>

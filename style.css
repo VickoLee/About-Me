@@ -1,0 +1,140 @@
+.btn{
+    padding: 20px    35px;
+    margin-top: 10px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: #ccc;
+}
+
+nav { 
+    background-color: #861657;
+    color: fff;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+nav a { 
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#about { 
+    background-image: url("Vee.JPG"); 
+    background-size: cover;
+    background-position: center center;
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    position: relative;
+}
+
+#about::after { 
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+#about * { 
+    position: relative;
+    z-index: 1;
+}
+
+#about h1 { 
+    font-size: 60px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+#about p { 
+    font-size: 30px;
+    margin: 0; 
+} 
+
+section h2{
+    margin: 0;
+}
+
+section p { 
+    margin-top: 0;
+}
+  
+section{ 
+    padding: 40px;
+    text-align: left;
+}
+
+.bg-pinkish { 
+    background-color: #A64253;
+    color: #fff;
+}
+
+.contact {
+    text-align: center;
+}
+
+/* Style all input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+  
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+  /* Style the container for inputs */
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+  
+footer { 
+    background-color: #861657;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+
